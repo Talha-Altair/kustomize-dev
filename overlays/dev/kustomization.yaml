@@ -3,3 +3,7 @@ kind: Kustomization
 bases:
   - ../../base
 namespace: connor-dev
+
+patchesStrategicMerge:
+  - "configmap.yaml"
+  
