@@ -19,4 +19,7 @@ spec:
         image: docker.io/talhaabdurrahman/env-tester
         ports:
         - containerPort: 8500
-        imagePullPolicy: Always 
+        envFrom:
+          - configMapRef:
+            name: connor
+        imagePullPolicy: Always
