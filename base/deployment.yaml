@@ -21,5 +21,5 @@ spec:
         - containerPort: 8500
         envFrom:
           - configMapRef:
-            name: connor
+              name: connor
         imagePullPolicy: Always
